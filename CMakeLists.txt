@@ -4,6 +4,8 @@ set(PROJECT_NAME RMine)
 project(${PROJECT_NAME})
 
 add_executable(${PROJECT_NAME} src/main.cpp)
+add_executable(${PROJECT_NAME} src/main.h)
+add_executable(${PROJECT_NAME} src/includes.h)
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
