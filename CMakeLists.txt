@@ -3,9 +3,9 @@ cmake_minimum_required(VERSION 3.30 FATAL_ERROR)
 set(PROJECT_NAME RMine)
 project(${PROJECT_NAME})
 
-add_executable(${PROJECT_NAME} src/main.cpp)
-add_executable(${PROJECT_NAME} src/main.h)
-add_executable(${PROJECT_NAME} src/includes.h)
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(${PROJECT_NAME} src/main.cpp src/main.h src/includes.h)
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)

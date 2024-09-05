@@ -1,7 +1,4 @@
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-
-#include <iostream>
+#include "includes.h"
 
 GLfloat points[] = {
      0.0f,  0.5f, 0.0f,
